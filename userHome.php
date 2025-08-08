@@ -90,7 +90,7 @@ function createAppointment($conn, $mechanic_id, $car_id, $user_id, $appointment_
     return mysqli_query($conn, $query);
 }
 
-// Main appointment booking logic
+// Main appointment booking 
 function bookAppointment($conn, $form_data) {
     // Extract form data
     $name = $form_data['your_name'];
@@ -135,7 +135,7 @@ function bookAppointment($conn, $form_data) {
     }
 }
 
-// Handle AJAX request for getting mechanics (for JavaScript)
+// Handle request for getting mechanics for js prt
 if (isset($_GET['get_mechanics']) && isset($_GET['date'])) {
     header('Content-Type: application/json');
     $mechanics_data = getAvailableMechanics($conn, $_GET['date']);
@@ -146,7 +146,7 @@ if (isset($_GET['get_mechanics']) && isset($_GET['date'])) {
 // Initialize mechanics list
 $mechanics = getAvailableMechanics($conn);
 
-// Handle form submission
+//form submission
 if ($_POST) {
     $message = bookAppointment($conn, $_POST);
     $mechanics = getAvailableMechanics($conn, $_POST['appointment_date']);
