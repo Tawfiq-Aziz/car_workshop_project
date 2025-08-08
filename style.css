@@ -1,0 +1,64 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(212, 231, 175);
+    display: flex;
+    justify-content: center;
+    margin: 10;
+    padding: 250px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.form_design {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+.form_design input[type="text"],
+.form_design input[type="password"] {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.form_design input[type="submit"] {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 0px 0px black;
+}
+
+.form_design input[type="submit"]:hover{
+    background-color: aquamarine;
+}
+
+
+.form_design input[type="submit"]:active {
+    box-shadow: 0px 3px 0px 0px black;
+}
+
+.form_label {
+    font-weight: bold;
+}
+
+
+.form_role {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+

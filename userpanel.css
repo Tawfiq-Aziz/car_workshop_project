@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(212, 231, 175);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    color: black;
+}
+
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+form {
+    background-color: rgb(212, 231, 175);
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 12px;
+    transition: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: black;
+    box-shadow: none;
+}
+
+.form-submit input[type="submit"] {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 0px 0px black;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+}
+
+.form-submit input[type="submit"]:hover {
+    background-color: aquamarine;
+}
+
+.form-submit input[type="submit"]:active {
+    box-shadow: 0px 3px 0px 0px black;
+}
+
+.message {
+    background-color: #e0ffe0; 
+    color: #2d662d;            
+    border: 1px solid #a0d6a0;
+    padding: 15px 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
