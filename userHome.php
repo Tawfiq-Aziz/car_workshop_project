@@ -1,7 +1,7 @@
 <?php
 require_once('dbConnect.php');
 
-// Initialize variables
+
 $message = '';
 $phone = '';
 $appointment_date = '';
@@ -92,7 +92,6 @@ function createAppointment($conn, $mechanic_id, $car_id, $user_id, $appointment_
 
 // Main appointment booking 
 function bookAppointment($conn, $form_data) {
-    // Extract form data
     $name = $form_data['your_name'];
     $address = $form_data['address'];
     $phone = $form_data['phone'];
@@ -135,7 +134,7 @@ function bookAppointment($conn, $form_data) {
     }
 }
 
-// Handle request for getting mechanics for js prt
+// Handle request for getting mechanics (js part)
 if (isset($_GET['get_mechanics']) && isset($_GET['date'])) {
     header('Content-Type: application/json');
     $mechanics_data = getAvailableMechanics($conn, $_GET['date']);
